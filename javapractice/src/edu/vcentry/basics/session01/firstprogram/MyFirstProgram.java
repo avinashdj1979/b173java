@@ -1,4 +1,4 @@
-package edu.vcentry.basics.session01.firstprogram;
+ package edu.vcentry.basics.session01.firstprogram;
 
 public class MyFirstProgram {
 
