@@ -2,7 +2,7 @@ package edu.vcentry.classes.inheritance;
 
 public class American extends Person{
 	
-	//Is-A relations
+	//Is-A relationship
 	//Indian is a Person
 	//American is a person
 	
