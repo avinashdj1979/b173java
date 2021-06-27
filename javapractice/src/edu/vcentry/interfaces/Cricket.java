@@ -26,4 +26,9 @@ public class Cricket implements Sports{
 	public void majors() {
 		
 	}
+	
+	public void teamSport() {
+		System.out.println("Its a team sport");
+	}
+	
 }
