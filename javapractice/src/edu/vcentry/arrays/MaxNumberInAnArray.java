@@ -23,7 +23,7 @@ public class MaxNumberInAnArray {
 			counter++;
 		}
 
-		for(double num: myArr2) {
+		for(double num : myArr2) {
 			num *= 10;
 			System.out.println(num);
 		}
