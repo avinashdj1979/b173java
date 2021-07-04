@@ -15,6 +15,7 @@ public class HashMapDemo {
 		map.put("Ram", "A");
 		map.put("John", "B");
 		map.put("Asif", "C");
+		map.put("Ram", "D");
 		
 		System.out.printf("Ram's grade is %S\n", map.get("Ram"));
 		
@@ -24,16 +25,33 @@ public class HashMapDemo {
 		Set<String> keySet = map.keySet();
 		System.out.println("Key set" + keySet);
 		
+		System.out.println("****** Print Using Key Set *****");
+		
 		for(String key : keySet) {
 			System.out.println(key);
-			System.out.printf("%S's grade is %S\n", key, map.get(key));
+			String value = map.get(key);
+			System.out.printf("%S's grade is %S\n", key, value);
 		}
 		
 		//Lambdas
-		map.forEach((k,v) -> {
-			System.out.println("Key:" + k);
-			System.out.println(k + "==>" + v);
+		System.out.println("****** Print Using Lambdas *****");
+		map.forEach((key,val) -> {
+			System.out.println("Key:" + key);
+			System.out.println(key + "==>" + val);
 			});
+		
+		
+		System.out.println("****** Print Using Entry Set *****");
+		//Accessing maps using Map.Entry
+		Set<Map.Entry<String, String>> kvPairSet = map.entrySet();
+		for(Map.Entry<String, String> kvPair : kvPairSet) {
+			System.out.printf("%s => %s\n", kvPair.getKey(), kvPair.getValue());
+		}
+		
+		//System.out.println(kvPairSet);
+		
+		//{Asif=C, John=B, Ram=D}
+		//[Asif=C, John=B, Ram=D]
 		
 		map.clear();
 		System.out.println(map);
