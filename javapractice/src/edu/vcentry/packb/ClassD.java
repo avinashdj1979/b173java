@@ -1,6 +1,7 @@
 package edu.vcentry.packb;
 
 import edu.vcentry.packa.ClassA;
+import edu.vcentry.staticexample.StaticExample;
 
 public class ClassD extends ClassA{
 	
@@ -14,6 +15,8 @@ public class ClassD extends ClassA{
 //		aObj.defaultMethod();
 //		aObj.protectedMethod();
 		aObj.publicMethod();
+		
+		int x = StaticExample.staticVar;
 	}
 
 }
