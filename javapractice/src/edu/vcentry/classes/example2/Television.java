@@ -12,6 +12,10 @@ public class Television {
 		this.name = name;
 	}
 	
+	public static void hi(String name) {
+		System.out.println("hi " + name);
+	}
+	
 }
 
 /*

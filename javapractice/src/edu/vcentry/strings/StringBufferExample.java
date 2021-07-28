@@ -6,7 +6,6 @@ public class StringBufferExample {
 
 		String s3 = new String("Welcome");
 
-		
 		s3.concat(" Everyone");
 		System.out.println(s3);
 		

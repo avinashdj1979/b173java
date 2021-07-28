@@ -1,6 +1,6 @@
 package edu.vcentry.classes.basics;
 
-public class Main2 {
+public class ObjectReferenceExample {
 
 	public static void main(String[] args) {
 		
